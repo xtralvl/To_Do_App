@@ -1,0 +1,44 @@
+.list-element {
+    height: 2rem;
+    width: 100%;
+    background-color: #25273D;
+    color: rgb(255, 255, 255, 0.8);
+
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    padding: .2rem .6rem;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+};
+
+.list-button {
+    border: 1px solid rgb(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 2.2rem;
+    height: 2.2rem;
+    background-color: #25273D;
+    color: rgb(255, 255, 255, 0.8);
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+};
+
+#check-button {
+    margin-right: 1.5rem;
+    opacity: 0.6;
+};
+
+#cross-button {
+    margin-left: auto;
+    border: none;
+};
+
+.done {
+    text-decoration: line-through;
+    opacity: 0.5;
+};
+
+
+

@@ -1,0 +1,47 @@
+.app-container {
+    margin-top: -8rem;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    margin: 0 1rem;
+    gap: 1rem;
+    background-color: #25273D;
+    border-radius: 5px;
+    padding: .2rem .6rem;
+
+
+    button {
+        border: 1px solid rgb(255, 255, 255, 0.3);
+        border-radius: 5px;
+        width: 3rem;
+        height: 2.2rem;
+        background-color: #25273D;
+        color: rgb(255, 255, 255, 0.8);
+        cursor: pointer;
+        font-family: 'Josefin Sans', sans-serif
+    }
+
+    input {
+        height: 2rem;
+        border-radius: 5px;
+        width: 100%;
+        background-color: #25273D;
+        border: none;
+        color: white;
+        font-family: 'Josefin Sans', sans-serif
+    }
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+    margin: 2rem 1.5rem;
+
+}

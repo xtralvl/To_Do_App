@@ -1,0 +1,43 @@
+.dark-hero-image-container {
+    background-image: url('../assets//images/bg-mobile-dark.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    width: 100%;             /* make sure the container takes full width */
+    height: 15rem;
+
+};
+
+.light-hero-image-container {
+    background-image: url('../assets//images/bg-mobile-light.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    width: 100%;             /* make sure the container takes full width */
+    height: 15rem;
+}
+
+.hero-inner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 1rem;
+
+
+    h1 {
+        color: white;
+        margin: 0;
+        letter-spacing: 8px;
+        font-weight: 300;
+    }
+
+
+    .mode-icon-button {
+        border: none;
+        background-color: #eae3e300;
+        cursor: pointer;
+
+    }
+}
