@@ -1,20 +1,31 @@
 import React, { useState } from "react";
 import List from "./List";
 
-// this component renders a new li for every todo that is added
+interface Todo {
+    id: number;
+    text: string;
+};
 
 export default function AddNewTodo() {
 
-    const [todos, setTodos] = useState<string[]>([]);
+    const [todos, setTodos] = useState<Todo[]>([]);
     const [inputValue, setInputValue] = useState("");
+    const [nextId, setNextId] = useState(1);
 
     const handleSubmit = ((e : React.FormEvent) => {
         e.preventDefault();
         if (inputValue.trim() === "") return;
+        setInputValue("")
 
-        setTodos(prevTodos => [inputValue, ...prevTodos]);
-        setInputValue("");
+        const newTodo: Todo = {id: nextId, text: inputValue};
+        setTodos(prev => [newTodo, ...prev]);
+        setNextId(prev => prev + 1);
+        
     });
+
+    const handleDelete = (idToDelete: number) => {
+        setTodos(prevtodos => prevtodos.filter(todo => todo.id !== idToDelete));
+    };
 
     return (
         <div className="app-container" >
@@ -29,11 +40,12 @@ export default function AddNewTodo() {
             </form>
 
             <ul>
-                {todos.map((todo, i) => {
+                {todos.map((todo) => {
                     return (
                         <List 
-                            key={`todo_${i}`}
+                            key={todo.id}
                             todo={todo}
+                            onDelete={handleDelete}
                         />
                     )
                 })}
