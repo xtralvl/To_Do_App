@@ -1,9 +1,9 @@
 import { createRoot } from "react-dom/client";
-import App from './App'
-import './styles/Header.scss'
-import './styles/index.scss'
-import './styles/AddNewTodo.scss';
-import './styles/List.scss'
+import App from './App';
+
+import './styles/App.scss';
+import './styles/AddTodo.scss';
+import './styles/ListElement.scss';
 
 const root = createRoot(document.getElementById('root') as HTMLElement);
 

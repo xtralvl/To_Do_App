@@ -1,0 +1,88 @@
+form {
+    margin: -8.5rem 2rem 2.5rem 2rem;
+    background-color: #25273D;
+    height: 3rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+
+    input,
+    button{
+        background-color: #25273D;
+        color: white;
+        height: 100%;
+        border-radius: 5px;
+
+    }
+
+    input {
+        width: 100%;
+        border: none;
+        padding-left: .5rem;
+    }
+
+    button {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding-left: .7rem;
+        padding-right: .7rem;
+        border-right: 1px solid rgb(255, 255, 255, 0.1);
+        border-top: none;
+        border-left: none;
+        border-bottom: none;
+
+        
+        img {
+            width: 1.7rem;
+            height: 1.7rem;
+            opacity: .5;
+            border: 1px solid rgb(255, 255, 255, 0.5);
+            border-radius: 50%;
+            padding: .3rem;
+            align-self: center;
+            justify-self: center;
+        }
+    }
+}
+
+.addtodo-light {
+    background-color: white;
+  
+    input,
+    button {
+      background-color: white;
+      color: black;
+      border-right: 1px solid rgba(0, 0, 0, 0.1);
+
+    }
+  
+    button img {
+      border: 1px solid rgb(255, 255, 255, 0.5);
+      filter: invert(100%);
+    }
+  }q
+  
+  .addtodo-dark {
+    background-color: #25273D;
+  
+    input,
+    button {
+      background-color: #25273D;
+      color: white;
+    }
+  
+    button img {
+      border: 1px solid rgba(255,255,255,0.5);
+    }
+  }
+
+  .error-msg {
+    display: flex;
+    color: red;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2rem;
+    font-size: .8rem;
+  }
+  

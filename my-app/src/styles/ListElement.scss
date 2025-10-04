@@ -1,0 +1,77 @@
+.list-element-span {
+    background-color: #25273D;
+    min-height: 3rem; /* grow if text wraps */
+    display: flex;
+    align-items: center;
+    margin: 0 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.4;    
+
+    .list-text {
+        flex-grow: 1;            /* expand between buttons */
+        min-width: 0;            /* prevent flex overflow */
+        white-space: normal;     /* allow wrapping */
+        overflow-wrap: break-word; /* wrap long words */
+        margin: 0 1rem;          /* breathing room */
+    }
+
+    button {
+
+        img {
+            opacity: .5;
+            border-radius: 50%;
+            padding: .3rem;
+            align-self: center;
+            justify-self: center;
+        }
+
+    }
+
+    .check-button {
+        margin-right: 1rem;
+        border-right: 1px solid rgb(255, 255, 255, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center; /* better than align-content here */
+        border-top: none;
+        border-left: none;
+        border-bottom: none;
+        background: none;
+        opacity: 0.5;
+
+        img {
+            width: 1.5rem;
+            height: 1.4rem;
+
+        }
+
+
+    }
+
+    .delete-button {
+        margin-left: auto; /* pushes it to the right side */
+        margin-right: 1rem;
+        border-left: 1px solid rgb(255, 255, 255, 0.1);
+        border-top: none;
+        border-right: none;
+        border-bottom: none;
+        display: flex;
+        justify-content: center;
+        align-items: center; /* better than align-content here */
+        background: none;
+        padding: 0;
+        
+    }
+};
+
+.task-not-done {
+    text-decoration: none;
+    opacity: 1;
+
+}
+
+.task-done {
+    text-decoration: line-through;
+    opacity: .5;
+}

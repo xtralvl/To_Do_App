@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+};
+
+.body-dark {
+    background-color: black;
+};
+
+.header-light {
+    background-image: url('./src/images/bg-mobile-light.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+};
+
+.header-dark {
+    background-image: url('./src/images/bg-mobile-dark.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+};
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+    height: 40vh;
+
+    h1 {
+        color: white;
+        letter-spacing: 12px;
+        margin-top: 1rem;
+        margin-left: .5rem;
+        padding: 0;
+    }
+};
+
+.themeButton {
+    border: none;
+    background-color: rgb(255, 255, 255, 0);
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-right: .5rem;
+    padding: 0;
+}
